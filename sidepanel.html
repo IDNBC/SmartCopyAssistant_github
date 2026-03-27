@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 10px; background: #f8f9fa; color: #333; }
+    h2 { font-size: 16px; border-bottom: 2px solid #007bff; padding-bottom: 5px; margin-top: 0; }
+
+    #history-list { margin-top: 10px; }
+    .history-item-wrapper { position: relative; margin-bottom: 8px; }
+    .history-item {
+      background: white; border: 1px solid #ddd; border-radius: 6px;
+      padding: 10px; padding-right: 35px; cursor: pointer;
+      font-size: 13px; line-height: 1.4; word-break: break-all;
+      transition: all 0.2s;
+    }
+    .history-item:hover { border-color: #007bff; background: #f0f7ff; }
+
+    .del-btn {
+      position: absolute; right: 8px; top: 8px; width: 20px; height: 20px;
+      background: #ff4d4d; color: white; border: none; border-radius: 50%;
+      cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center;
+    }
+    .del-btn:hover {
+      background: #cc0000;
+    }
+
+    button {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    button:hover {
+      background: #f0f7ff;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="margin-bottom:10px;">
+  <label>
+    <input type="checkbox" id="toggle-enabled" />
+    拡張機能を有効にする
+  </label>
+</div>
+  <div style="font-size:12px;color:#666;margin-bottom:8px;">
+    ※コピー形式の設定は「すべてコピー」にのみ適用されます（個別コピーには影響しません）
+  </div>
+
+  <label style="font-size:12px;color:#333;display:block;margin-bottom:4px;">
+    コピー形式（まとめコピー用）
+  </label>
+
+  <select id="format-select">
+    <option value="double">改行あり</option>
+    <option value="inline">1行にする（改行・余白を削除）</option>
+  </select>
+
+  <div id="controls" style="display:flex; gap:8px; margin-top:8px; margin-bottom:10px;">
+    <button id="copy-all">すべてコピー</button>
+    <button id="clear-all">すべて削除</button>
+  </div>
+
+  <h2>コピー履歴 <span id="count" style="font-size:12px;color:#888;"></span></h2>
+  <div id="history-list"></div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
