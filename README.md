@@ -9,6 +9,7 @@ Lightweight clipboard history extension for Chrome / Edge.
 * Save selected text with one click
 * Automatically record **Ctrl+C / Cmd+C / right-click copy**
 * Floating "Save to history" button on text selection
+* Import current clipboard content (even from external apps like VSCode)
 * Re-copy from history with a single click
 * Bulk copy with formatting options:
 
@@ -24,8 +25,9 @@ Lightweight clipboard history extension for Chrome / Edge.
 
 1. Select text on any webpage
 2. Click **"Save to history"** OR copy normally (Ctrl+C / right-click)
-3. Open the side panel
-4. Click any item to copy again
+3. (Optional) Click **"Import Clipboard"** in the side panel to add external copied text
+4. Open the side panel
+5. Click any item to copy again
 
 ---
 
@@ -40,10 +42,11 @@ Lightweight clipboard history extension for Chrome / Edge.
 
 ### Limitations
 
-* Only **plain text** is supported
+* Only **plain text** is supported  
   (images, rich text, formatting, HTML are NOT saved)
 * Very large text may not be saved (length limit applied for stability)
 * Bulk formatting applies **only to "Copy All"**, not individual items
+* Clipboard import may not work in some environments due to browser security restrictions
 
 ---
 
@@ -58,7 +61,7 @@ Lightweight clipboard history extension for Chrome / Edge.
 ### Permissions Explanation
 
 * Access to all pages is required to detect text selection and copy actions
-* Clipboard access is used only when the user performs a copy action
+* Clipboard access is used only when the user performs a copy action or explicitly imports clipboard content
 
 ---
 
@@ -79,6 +82,7 @@ Install from Chrome Web Store (link will be added)
 * 選択テキストをワンクリックで保存
 * Ctrl+C / 右クリックコピーも自動記録
 * テキスト選択時に「履歴に保存」ボタンを表示
+* **クリップボードの内容を履歴に取り込み可能（VSCodeなど他アプリ対応）**
 * 履歴からワンクリックで再コピー
 * まとめコピー機能
 
@@ -94,8 +98,9 @@ Install from Chrome Web Store (link will be added)
 
 1. テキストを選択
 2. 「履歴に保存」をクリック、または通常コピー（Ctrl+C / 右クリック）
-3. サイドパネルを開く
-4. 履歴をクリックで再コピー
+3. （任意）サイドパネルの「クリップボードを履歴に追加」を押すと外部コピーも保存可能
+4. サイドパネルを開く
+5. 履歴をクリックで再コピー
 
 ---
 
@@ -115,6 +120,7 @@ Install from Chrome Web Store (link will be added)
   * 画像、リッチテキスト、HTML形式は保存されません
 * 非常に長いテキストは保存されない場合があります（安定性のため）
 * コピー形式の設定は「すべてコピー」にのみ適用されます
+* クリップボード取り込みはブラウザの制限により動作しない場合があります
 
 ---
 
@@ -129,7 +135,7 @@ Install from Chrome Web Store (link will be added)
 ## 権限について
 
 * テキスト選択・コピー検知のため、すべてのページへのアクセスが必要です
-* クリップボードはユーザー操作時のみ使用されます
+* クリップボードはユーザー操作時のみ使用されます（コピー時・手動取り込み時）
 
 ---
 

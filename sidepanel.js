@@ -148,3 +148,28 @@ chrome.storage.onChanged.addListener((changes, area) => {
     displayHistory();
   }
 });
+
+const pasteImportBtn = document.getElementById('paste-import');
+
+pasteImportBtn.onclick = async () => {
+  try {
+    const text = await navigator.clipboard.readText();
+
+    if (!text.trim()) {
+      showSideToast("クリップボードが空です");
+      return;
+    }
+
+    chrome.runtime.sendMessage({ type: "SAVE_COPY", text }, (res) => {
+      if (res?.status === "too_large") {
+        showSideToast("長すぎて保存できませんでした");
+      } else if (res?.status === "success") {
+        showSideToast("履歴に追加しました");
+      }
+    });
+
+  } catch (e) {
+    console.error(e); // ←追加
+    showSideToast("クリップボード取得失敗（権限 or セキュリティ制限）");
+  }
+};
