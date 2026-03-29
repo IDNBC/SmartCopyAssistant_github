@@ -52,7 +52,7 @@ Lightweight clipboard history extension for Chrome / Edge.
 
 ### Privacy & Security
 
-* All data is stored locally (`chrome.storage.local`)
+* All data is stored locally within the browser's secure storage.
 * No external servers or data transmission
 * No tracking or analytics
 
@@ -62,14 +62,9 @@ Lightweight clipboard history extension for Chrome / Edge.
 
 * Access to all pages is required to detect text selection and copy actions
 * Clipboard access is used only when the user performs a copy action or explicitly imports clipboard content
-
+* Clipboard access permission may be requested on first use of the import feature.
 ---
 
-### Installation
-
-Install from Chrome Web Store (link will be added)
-
----
 
 ## 🇯🇵 日本語
 
@@ -126,7 +121,7 @@ Install from Chrome Web Store (link will be added)
 
 ## プライバシー・安全性
 
-* データはすべてローカルに保存されます
+* データはすべてブラウザ内の安全なローカルストレージに保存されます。
 * 外部サーバーへの送信は一切ありません
 * トラッキングなし
 
@@ -136,9 +131,4 @@ Install from Chrome Web Store (link will be added)
 
 * テキスト選択・コピー検知のため、すべてのページへのアクセスが必要です
 * クリップボードはユーザー操作時のみ使用されます（コピー時・手動取り込み時）
-
----
-
-## インストール
-
-Chrome Web Storeからインストールしてください（公開後リンク追加）
+* クリップボード取り込み機能の初回使用時に、権限許可が求められる場合があります
