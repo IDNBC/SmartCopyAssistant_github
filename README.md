@@ -45,8 +45,11 @@ Lightweight clipboard history extension for Chrome / Edge.
 * Only **plain text** is supported  
   (images, rich text, formatting, HTML are NOT saved)
 * Very large text may not be saved (length limit applied for stability)
-* Bulk formatting applies **only to "Copy All"**, not individual items
+* Bulk copy with formatting options:
+  * Multi-line (default)
+  * Single-line (remove line breaks and extra spaces)
 * Clipboard import may not work in some environments due to browser security restrictions
+* Some websites with complex formatting (such as math expressions) may result in duplicated text when copied.
 
 ---
 
@@ -63,6 +66,20 @@ Lightweight clipboard history extension for Chrome / Edge.
 * Access to all pages is required to detect text selection and copy actions
 * Clipboard access is used only when the user performs a copy action or explicitly imports clipboard content
 * Clipboard access permission may be requested on first use of the import feature.
+---
+
+## Installation / インストール
+
+You can install **Smart Copy Assistant** from the official stores:
+
+- [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available-blue?style=for-the-badge&logo=google-chrome)](https://chromewebstore.google.com/detail/smart-copy-assistant/nnelgdkmhaalahmpigbmdcffmkkhcmgn)  
+  **English:** Available on the Chrome Web Store.  
+  **日本語:** Chrome ウェブストアで入手可能です。
+
+- [![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft_Edge_Add-ons-Pending-lightblue?style=for-the-badge&logo=microsoft-edge)](#)
+  **English:** Edge version pending certification.  
+  **日本語:** Edge版は審査中です。
+
 ---
 
 
@@ -112,10 +129,12 @@ Lightweight clipboard history extension for Chrome / Edge.
 
 * **テキストのみ対応**
 
-  * 画像、リッチテキスト、HTML形式は保存されません
+* 画像、リッチテキスト、HTML形式は保存されません
 * 非常に長いテキストは保存されない場合があります（安定性のため）
 * コピー形式の設定は「すべてコピー」にのみ適用されます
 * クリップボード取り込みはブラウザの制限により動作しない場合があります
+* ブラウザのセキュリティ制限により、設定画面や拡張機能ページ、Copilotなどの一部の特別なページでは、本拡張機能が動作しない場合があります。
+* 数式などの複雑なフォーマットを含む一部のWebサイトでは、コピー時にテキストが重複する場合があります。
 
 ---
 
