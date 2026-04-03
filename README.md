@@ -76,7 +76,7 @@ You can install **Smart Copy Assistant** from the official stores:
   **English:** Available on the Chrome Web Store.  
   **日本語:** Chrome ウェブストアで入手可能です。
 
-- [![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft_Edge_Add-ons-Pending-lightblue?style=for-the-badge&logo=microsoft-edge)](#)
+- [![Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/smart-copy-assistant/lkiogpkmdnijahleijfchognjmhickem?hl=ja)](#)
   **English:** Edge version pending certification.  
   **日本語:** Edge版は審査中です。
 
